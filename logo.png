@@ -1,0 +1,195 @@
+export default function ArafCollectionWebsite() { const products = [ { id: 1, name: 'Premium Outfit', price: '৳2500', image: 'Product 1', }, { id: 2, name: 'Luxury Collection', price: '৳3200', image: 'Product 2', }, { id: 3, name: 'Modern Fashion', price: '৳2800', image: 'Product 3', }, ]; return ( <div className="min-h-screen bg-gradient-to-b from-slate-950 to-blue-950 text-white font-sans"> {/* Header */} <header className="flex items-center justify-between px-8 py-6 border-b border-blue-800"> <div className="flex items-center gap-4"> <img
+src="/logo.png"
+alt="Araf Collection Logo"
+className="w-16 h-16 rounded-full border-2 border-blue-400 shadow-xl"
+/>
+
+<div>
+      <h1 className="text-3xl md:text-5xl font-bold tracking-wide text-blue-300">
+        Araf Collection
+      </h1>
+      <p className="text-sm text-gray-300 mt-1">Premium Fashion Brand</p>
+      </div>
+    </div>
+
+    <nav className="hidden md:flex gap-6 text-lg">
+      <a href="#home" className="hover:text-blue-300">Home</a>
+      <a href="#products" className="hover:text-blue-300">Products</a>
+      <a href="#about" className="hover:text-blue-300">About</a>
+      <a href="#contact" className="hover:text-blue-300">Contact</a>
+    </nav>
+  </header>
+
+  {/* Hero Section */}
+  <section
+    id="home"
+    className="flex flex-col items-center justify-center text-center px-6 py-24"
+  >
+    <div className="bg-blue-500/10 border border-blue-400 rounded-3xl px-10 py-12 shadow-2xl max-w-4xl">
+      <h2 className="text-4xl md:text-7xl font-extrabold text-blue-200 leading-tight">
+        Premium Style <br /> For Modern Fashion
+      </h2>
+
+      <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
+        Welcome to Araf Collection — where premium quality meets elegant design.
+        Discover stylish collections with modern luxury.
+      </p>
+
+      <button className="mt-8 bg-blue-500 hover:bg-blue-600 transition px-8 py-4 rounded-2xl text-lg font-semibold shadow-xl">
+        Shop Now
+      </button>
+    </div>
+  </section>
+
+  {/* Products */}
+  <section id="products" className="px-8 py-20">
+    <div className="text-center mb-14">
+      <h3 className="text-4xl font-bold text-blue-200">Our Premium Collection</h3>
+      <p className="text-gray-400 mt-3">
+        Stylish and premium fashion products for everyone.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {products.map((item) => (
+        <div
+          key={item}
+          className="bg-slate-900 border border-blue-800 rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition"
+        >
+          <div className="h-72 bg-gradient-to-br from-blue-600 to-slate-900 flex items-center justify-center text-2xl font-bold">
+            {item.image}
+          </div>
+
+          <div className="p-6">
+            <h4 className="text-2xl font-semibold text-blue-200">
+              {item.name}
+            </h4>
+            <p className="text-gray-400 mt-2">
+              Elegant premium quality fashion design for modern lifestyle.
+            </p>
+
+            <div className="mt-5 flex items-center justify-between">
+              <span className="text-xl font-bold text-blue-300">{item.price}</span>
+
+              <button className="bg-blue-500 hover:bg-blue-600 px-5 py-3 rounded-xl font-semibold">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* Order Form */}
+  <section className="px-8 py-20 bg-slate-950/70">
+    <div className="max-w-3xl mx-auto bg-slate-900 border border-blue-800 rounded-3xl p-8 shadow-2xl">
+      <h3 className="text-4xl font-bold text-center text-blue-200">
+        Place Your Order
+      </h3>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="bg-slate-800 border border-blue-700 rounded-xl p-4 outline-none"
+        />
+
+        <input
+          type="text"
+          placeholder="Phone Number"
+          className="bg-slate-800 border border-blue-700 rounded-xl p-4 outline-none"
+        />
+
+        <input
+          type="text"
+          placeholder="Address"
+          className="bg-slate-800 border border-blue-700 rounded-xl p-4 outline-none md:col-span-2"
+        />
+
+        <select className="bg-slate-800 border border-blue-700 rounded-xl p-4 outline-none md:col-span-2">
+          <option>Select Product</option>
+          <option>Premium Outfit</option>
+          <option>Luxury Collection</option>
+          <option>Modern Fashion</option>
+        </select>
+      </div>
+
+      <button className="mt-8 w-full bg-blue-500 hover:bg-blue-600 py-4 rounded-2xl text-lg font-bold">
+        Confirm Order
+      </button>
+    </div>
+  </section>
+
+  {/* Login Section */}
+  <section className="px-8 py-20">
+    <div className="max-w-xl mx-auto bg-slate-900 border border-blue-800 rounded-3xl p-8 shadow-2xl">
+      <h3 className="text-4xl font-bold text-center text-blue-200">
+        Member Login
+      </h3>
+
+      <div className="space-y-5 mt-10">
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="w-full bg-slate-800 border border-blue-700 rounded-xl p-4 outline-none"
+        />
+
+        <input
+          type="password"
+          placeholder="Password"
+          className="w-full bg-slate-800 border border-blue-700 rounded-xl p-4 outline-none"
+        />
+
+        <button className="w-full bg-blue-500 hover:bg-blue-600 py-4 rounded-2xl font-bold text-lg">
+          Login
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {/* About */}
+  <section id="about" className="px-8 py-20 bg-slate-900/60">
+    <div className="max-w-5xl mx-auto text-center">
+      <h3 className="text-4xl font-bold text-blue-200">About Araf Collection</h3>
+
+      <p className="mt-6 text-lg text-gray-300 leading-8">
+        Araf Collection is a premium fashion brand focused on quality,
+        elegant design, and customer satisfaction. We believe fashion
+        should feel luxurious, modern, and comfortable.
+      </p>
+    </div>
+  </section>
+
+  {/* Contact */}
+  <section id="contact" className="px-8 py-20 text-center">
+    <h3 className="text-4xl font-bold text-blue-200">Contact Us</h3>
+
+    <div className="mt-10 space-y-4 text-lg text-gray-300">
+      <p>📞 Phone: +8801XXXXXXXXX</p>
+      <p>📧 Email: info@arafcollection.com</p>
+      <p>📍 Bangladesh</p>
+    </div>
+
+    <div className="mt-8 flex justify-center gap-4 flex-wrap">
+      <button className="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-xl font-semibold">
+        WhatsApp
+      </button>
+
+      <button className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-semibold">
+        Facebook
+      </button>
+
+      <button className="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-xl font-semibold">
+        Instagram
+      </button>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="border-t border-blue-900 py-6 text-center text-gray-400">
+    © 2026 Araf Collection. All Rights Reserved.
+  </footer>
+</div>
+
+); }
