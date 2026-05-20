@@ -1,0 +1,53 @@
+import { useState } from "react";
+
+export default function ArafCollectionWebsite() { const products = [ { id: 1, name: "Premium Outfit", price: 2500, image: "https://via.placeholder.com/300x300", }, { id: 2, name: "Luxury Collection", price: 3200, image: "https://via.placeholder.com/300x300", }, { id: 3, name: "Modern Fashion", price: 2800, image: "https://via.placeholder.com/300x300", }, ];
+
+const [cart, setCart] = useState([]);
+
+const addToCart = (product) => { setCart([...cart, product]); };
+
+const total = cart.reduce((sum, item) => sum + item.price, 0);
+
+return ( <div className="min-h-screen bg-slate-950 text-white"> {/* Header */} <header className="flex justify-between items-center p-6 border-b border-slate-700"> <h1 className="text-2xl font-bold">Araf Collection</h1> <div className="text-sm">Cart: {cart.length} | ৳{total}</div> </header>
+
+{/* Hero */}
+  <section className="text-center py-20">
+    <h2 className="text-4xl font-bold">Premium Fashion Store</h2>
+    <p className="mt-3 text-gray-400">Shop modern & luxury outfits</p>
+    <a
+      href="https://wa.me/8801XXXXXXXXX"
+      className="mt-6 inline-block bg-green-500 px-6 py-3 rounded-xl"
+    >
+      Order on WhatsApp
+    </a>
+  </section>
+
+  {/* Products */}
+  <section className="grid md:grid-cols-3 gap-6 p-6">
+    {products.map((p) => (
+      <div key={p.id} className="bg-slate-900 p-4 rounded-2xl">
+        <img src={p.image} className="rounded-xl" />
+        <h3 className="text-xl mt-3">{p.name}</h3>
+        <p className="text-gray-400">৳{p.price}</p>
+        <button
+          onClick={() => addToCart(p)}
+          className="mt-3 w-full bg-blue-600 py-2 rounded-xl"
+        >
+          Add to Cart
+        </button>
+      </div>
+    ))}
+  </section>
+
+  {/* Checkout */}
+  <section className="p-6 bg-slate-900">
+    <h2 className="text-2xl font-bold mb-4">Checkout (Nagad / bKash)</h2>
+    <p>Send payment to: 01XXXXXXXXX</p>
+    <p>Total: ৳{total}</p>
+    <button className="mt-3 bg-orange-500 px-6 py-3 rounded-xl">
+      Confirm Order
+    </button>
+  </section>
+</div>
+
+); }
