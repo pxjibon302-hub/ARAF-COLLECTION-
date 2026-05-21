@@ -2,161 +2,112 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Araf Collection</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
+margin:0;
+font-family:Arial;
 background:#031633;
 color:white;
 }
 
 header{
 background:#08204a;
-padding:20px;
 text-align:center;
-position:sticky;
-top:0;
+padding:25px;
 }
 
 header h1{
-font-size:45px;
-}
-
-header p{
-color:#cbd5e1;
-margin-top:5px;
+font-size:42px;
 }
 
 .hero{
 text-align:center;
-padding:80px 20px;
+padding:60px 20px;
 }
 
 .hero h2{
-font-size:45px;
-}
-
-.hero p{
-margin-top:10px;
-font-size:20px;
-color:#cbd5e1;
+font-size:38px;
 }
 
 .btn{
 background:#2563eb;
 color:white;
+padding:12px 25px;
 border:none;
-padding:15px 35px;
-border-radius:12px;
-font-size:18px;
+border-radius:10px;
 cursor:pointer;
-margin-top:20px;
+font-size:16px;
 }
 
 .products{
 display:flex;
-justify-content:center;
-gap:25px;
 flex-wrap:wrap;
-padding:40px;
+justify-content:center;
+gap:20px;
+padding:30px;
 }
 
 .card{
 background:#08204a;
-width:280px;
-border-radius:20px;
+width:260px;
+border-radius:15px;
 overflow:hidden;
-box-shadow:0 0 20px rgba(0,0,0,0.4);
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
 }
 
 .card img{
 width:100%;
-height:300px;
+height:260px;
 object-fit:cover;
 }
 
 .card-content{
-padding:20px;
+padding:15px;
 text-align:center;
 }
 
 .price{
 color:orange;
-font-size:28px;
-margin:10px 0;
-}
-
-.review{
-background:#08204a;
-margin:20px;
-padding:30px;
-border-radius:20px;
-text-align:center;
-}
-
-.review h2{
-margin-bottom:20px;
+font-size:22px;
+margin:8px 0;
 }
 
 .payment{
 background:#06142e;
-padding:50px;
+padding:40px;
 text-align:center;
+margin-top:20px;
 }
 
-.payment h2{
-font-size:40px;
-color:orange;
-margin-bottom:20px;
-}
-
-.payment input{
-width:260px;
-padding:15px;
-margin:10px;
+input{
+padding:12px;
+width:250px;
+margin:8px;
 border:none;
-border-radius:10px;
-font-size:16px;
+border-radius:8px;
 }
 
 footer{
-background:#08204a;
-padding:30px;
 text-align:center;
-}
-
-footer p{
-margin:10px;
+padding:20px;
+background:#08204a;
+margin-top:20px;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:15px;
+right:15px;
 background:#25D366;
-color:white;
-padding:15px 22px;
+padding:15px 18px;
 border-radius:50px;
+color:white;
 text-decoration:none;
-font-size:18px;
 font-weight:bold;
 }
 
@@ -167,139 +118,100 @@ font-weight:bold;
 <body>
 
 <header>
-
 <h1>Araf Collection</h1>
-
 <p>Premium Online Fashion Store</p>
-
 </header>
 
 <section class="hero">
 
 <h2>Premium Style For Modern Fashion</h2>
 
-<p>Luxury Clothing Collection For Everyone</p>
-
 <button class="btn">Shop Now</button>
 
 </section>
 
+<!-- PRODUCTS -->
 <section class="products">
 
+<!-- PRODUCT 1 -->
 <div class="card">
-
-<img src="https<img src="shirt.jpg">
+<img src="shirt.jpg" alt="Shirt">
 
 <div class="card-content">
-
-<h2>Premium T-Shirt</h2>
-
+<h3>Premium Shirt</h3>
 <p class="price">৳1200</p>
 
-<a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Premium%20T-Shirt">
-
+<a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Premium%20Shirt">
 <button class="btn">Buy Now</button>
-
 </a>
 
 </div>
-
 </div>
 
+<!-- PRODUCT 2 -->
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+<img src="hoodie.jpg" alt="Hoodie">
 
 <div class="card-content">
-
-<h2>Luxury Hoodie</h2>
-
+<h3>Luxury Hoodie</h3>
 <p class="price">৳2500</p>
 
 <a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Luxury%20Hoodie">
-
 <button class="btn">Buy Now</button>
-
 </a>
 
 </div>
-
 </div>
 
+<!-- PRODUCT 3 -->
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+<img src="panjabi.jpg" alt="Panjabi">
 
 <div class="card-content">
-
-<h2>Modern Panjabi</h2>
-
+<h3>Modern Panjabi</h3>
 <p class="price">৳1800</p>
 
 <a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Modern%20Panjabi">
-
 <button class="btn">Buy Now</button>
-
 </a>
 
 </div>
-
 </div>
 
 </section>
 
-<section class="review">
-
-<h2>Customer Reviews ⭐</h2>
-
-<p>"Very Premium Quality Product!"</p>
-
-<br>
-
-<p>"Trusted Online Shop & Fast Delivery"</p>
-
-</section>
-
+<!-- PAYMENT -->
 <section class="payment">
 
-<h2>Nagad / bKash Payment</h2>
+<h2>Send Money (bKash / Nagad)</h2>
 
-<p>Send Payment To:</p>
+<p>Send Money To:</p>
 
 <h1>01753038917</h1>
 
-<br><br>
-
-<input type="text" placeholder="Your Name">
-
 <br>
 
+<input type="text" placeholder="Your Name">
+<br>
 <input type="text" placeholder="Transaction ID">
 
 <br>
 
-<button class="btn">Confirm Payment</button>
+<button class="btn">Confirm Order</button>
 
 </section>
 
 <footer>
 
 <p>📱 WhatsApp: 01753038917</p>
-
-<p>📘 Facebook: Araf Collection</p>
-
-<p>💳 Nagad / bKash: 01753038917</p>
-
+<p>💳 bKash / Nagad Available</p>
 <p>© 2026 Araf Collection</p>
 
 </footer>
 
 <a class="whatsapp" href="https://wa.me/8801753038917">
-
 WhatsApp
-
 </a>
 
 </body>
-
   </html>
