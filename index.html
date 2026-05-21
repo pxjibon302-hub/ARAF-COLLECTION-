@@ -1,19 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Araf Collection</title>
+  <title>Araf Collection</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#06142e;
+      color:white;
+    }
+
+    header{
+      text-align:center;
+      padding:30px;
+      background:#0b1f45;
+    }
+
+    h1{
+      font-size:50px;
+    }
+
+    .hero{
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      background:#2563eb;
+      color:white;
+      border:none;
+      border-radius:10px;
+      font-size:18px;
+    }
+
+    .products{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+      padding:40px;
+    }
+
+    .card{
+      background:#0b1f45;
+      width:250px;
+      padding:20px;
+      border-radius:20px;
+      text-align:center;
+    }
+
+    .card img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    .price{
+      color:orange;
+      font-size:25px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#0b1f45;
+      margin-top:40px;
+    }
+  </style>
 </head>
 
-<body style="background:#06142e;color:white;text-align:center;font-family:Arial;">
+<body>
+
+<header>
 
 <h1>Araf Collection</h1>
+
 <p>Premium Fashion Brand</p>
+
+</header>
+
+<section class="hero">
 
 <h2>Premium Style For Modern Fashion</h2>
 
-<button style="padding:15px 30px;background:blue;color:white;border:none;border-radius:10px;">
-Shop Now
-</button>
+<button class="btn">Shop Now</button>
+
+</section>
+
+<section class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+
+<h2>Premium T-Shirt</h2>
+
+<p class="price">৳1200</p>
+
+<button class="btn">Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+
+<h2>Luxury Hoodie</h2>
+
+<p class="price">৳2500</p>
+
+<button class="btn">Buy Now</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+
+<h2>Modern Panjabi</h2>
+
+<p class="price">৳1800</p>
+
+<button class="btn">Buy Now</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>WhatsApp: 01XXXXXXXXX</p>
+
+<p>Nagad / bKash Available</p>
+
+</footer>
 
 </body>
 </html>
