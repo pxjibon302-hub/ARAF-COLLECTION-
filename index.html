@@ -1,136 +1,167 @@
-<<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title>Araf Collection</title>
 
-  <style>
+<meta charset="UTF-8">
 
-    body{
-      margin:0;
-      font-family:Arial;
-      background:#031633;
-      color:white;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header{
-      background:#08204a;
-      padding:25px;
-      text-align:center;
-      position:sticky;
-      top:0;
-    }
+<title>Araf Collection</title>
 
-    header h1{
-      font-size:45px;
-      margin:0;
-    }
+<style>
 
-    header p{
-      color:#cbd5e1;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
 
-    .hero{
-      text-align:center;
-      padding:80px 20px;
-    }
+body{
+background:#031633;
+color:white;
+}
 
-    .hero h2{
-      font-size:40px;
-    }
+header{
+background:#08204a;
+padding:20px;
+text-align:center;
+position:sticky;
+top:0;
+}
 
-    .btn{
-      background:#2563eb;
-      color:white;
-      border:none;
-      padding:15px 35px;
-      border-radius:12px;
-      font-size:18px;
-      cursor:pointer;
-    }
+header h1{
+font-size:45px;
+}
 
-    .products{
-      display:flex;
-      justify-content:center;
-      gap:25px;
-      flex-wrap:wrap;
-      padding:40px;
-    }
+header p{
+color:#cbd5e1;
+margin-top:5px;
+}
 
-    .card{
-      background:#08204a;
-      width:260px;
-      border-radius:20px;
-      overflow:hidden;
-      transition:0.4s;
-      box-shadow:0 0 20px rgba(0,0,0,0.4);
-    }
+.hero{
+text-align:center;
+padding:80px 20px;
+}
 
-    .card:hover{
-      transform:translateY(-10px);
-    }
+.hero h2{
+font-size:45px;
+}
 
-    .card img{
-      width:100%;
-      height:250px;
-      object-fit:cover;
-    }
+.hero p{
+margin-top:10px;
+font-size:20px;
+color:#cbd5e1;
+}
 
-    .card-content{
-      padding:20px;
-      text-align:center;
-    }
+.btn{
+background:#2563eb;
+color:white;
+border:none;
+padding:15px 35px;
+border-radius:12px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
 
-    .price{
-      color:orange;
-      font-size:28px;
-    }
+.products{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:40px;
+}
 
-    .review{
-      background:#08204a;
-      margin:20px;
-      padding:25px;
-      border-radius:20px;
-      text-align:center;
-    }
+.card{
+background:#08204a;
+width:280px;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+transition:0.4s;
+}
 
-    .payment{
-      background:#06142e;
-      padding:50px;
-      text-align:center;
-    }
+.card:hover{
+transform:translateY(-10px);
+}
 
-    .payment h2{
-      color:orange;
-      font-size:40px;
-    }
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
 
-    .payment input{
-      width:250px;
-      padding:15px;
-      margin:10px;
-      border:none;
-      border-radius:10px;
-    }
+.card-content{
+padding:20px;
+text-align:center;
+}
 
-    footer{
-      background:#08204a;
-      padding:30px;
-      text-align:center;
-    }
+.price{
+color:orange;
+font-size:28px;
+margin:10px 0;
+}
 
-    .whatsapp{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25D366;
-      color:white;
-      padding:15px 20px;
-      border-radius:50px;
-      text-decoration:none;
-      font-size:18px;
-    }
+.review{
+background:#08204a;
+margin:20px;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
 
-  </style>
+.review h2{
+margin-bottom:20px;
+}
+
+.payment{
+background:#06142e;
+padding:50px;
+text-align:center;
+}
+
+.payment h2{
+font-size:40px;
+color:orange;
+margin-bottom:20px;
+}
+
+.payment input{
+width:260px;
+padding:15px;
+margin:10px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+footer{
+background:#08204a;
+padding:30px;
+text-align:center;
+}
+
+footer p{
+margin:10px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 22px;
+border-radius:50px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -147,7 +178,7 @@
 
 <h2>Premium Style For Modern Fashion</h2>
 
-<p>Luxury Clothing Collection</p>
+<p>Luxury Clothing Collection For Everyone</p>
 
 <button class="btn">Shop Now</button>
 
@@ -165,7 +196,11 @@
 
 <p class="price">৳1200</p>
 
+<a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Premium%20T-Shirt">
+
 <button class="btn">Buy Now</button>
+
+</a>
 
 </div>
 
@@ -181,7 +216,11 @@
 
 <p class="price">৳2500</p>
 
+<a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Luxury%20Hoodie">
+
 <button class="btn">Buy Now</button>
+
+</a>
 
 </div>
 
@@ -197,7 +236,11 @@
 
 <p class="price">৳1800</p>
 
+<a href="https://wa.me/8801753038917?text=I%20want%20to%20buy%20Modern%20Panjabi">
+
 <button class="btn">Buy Now</button>
+
+</a>
 
 </div>
 
@@ -211,7 +254,9 @@
 
 <p>"Very Premium Quality Product!"</p>
 
-<p>"Fast Delivery and Trusted Shop"</p>
+<br>
+
+<p>"Trusted Online Shop & Fast Delivery"</p>
 
 </section>
 
@@ -222,6 +267,8 @@
 <p>Send Payment To:</p>
 
 <h1>01753038917</h1>
+
+<br><br>
 
 <input type="text" placeholder="Your Name">
 
@@ -237,19 +284,22 @@
 
 <footer>
 
-<p>WhatsApp: 01XXXXXXXXX</p>
+<p>📱 WhatsApp: 01753038917</p>
 
-<p>Facebook: Araf Collection</p>
+<p>📘 Facebook: Araf Collection</p>
+
+<p>💳 Nagad / bKash: 01753038917</p>
 
 <p>© 2026 Araf Collection</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/8801XXXXXXXXX">
+<a class="whatsapp" href="https://wa.me/8801753038917">
 
 WhatsApp
 
 </a>
 
 </body>
+
   </html>
