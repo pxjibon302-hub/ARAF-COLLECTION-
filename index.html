@@ -1,24 +1,32 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
   <title>Araf Collection</title>
 
   <style>
+
     body{
       margin:0;
       font-family:Arial;
-      background:#06142e;
+      background:#031633;
       color:white;
     }
 
     header{
+      background:#08204a;
+      padding:25px;
       text-align:center;
-      padding:30px;
-      background:#0b1f45;
+      position:sticky;
+      top:0;
     }
 
-    h1{
-      font-size:50px;
+    header h1{
+      font-size:45px;
+      margin:0;
+    }
+
+    header p{
+      color:#cbd5e1;
     }
 
     .hero{
@@ -26,47 +34,102 @@
       padding:80px 20px;
     }
 
+    .hero h2{
+      font-size:40px;
+    }
+
     .btn{
-      padding:15px 35px;
       background:#2563eb;
       color:white;
       border:none;
-      border-radius:10px;
+      padding:15px 35px;
+      border-radius:12px;
       font-size:18px;
+      cursor:pointer;
     }
 
     .products{
       display:flex;
       justify-content:center;
+      gap:25px;
       flex-wrap:wrap;
-      gap:20px;
       padding:40px;
     }
 
     .card{
-      background:#0b1f45;
-      width:250px;
-      padding:20px;
+      background:#08204a;
+      width:260px;
       border-radius:20px;
-      text-align:center;
+      overflow:hidden;
+      transition:0.4s;
+      box-shadow:0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
     }
 
     .card img{
       width:100%;
-      border-radius:15px;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+      text-align:center;
     }
 
     .price{
       color:orange;
-      font-size:25px;
+      font-size:28px;
+    }
+
+    .review{
+      background:#08204a;
+      margin:20px;
+      padding:25px;
+      border-radius:20px;
+      text-align:center;
+    }
+
+    .payment{
+      background:#06142e;
+      padding:50px;
+      text-align:center;
+    }
+
+    .payment h2{
+      color:orange;
+      font-size:40px;
+    }
+
+    .payment input{
+      width:250px;
+      padding:15px;
+      margin:10px;
+      border:none;
+      border-radius:10px;
     }
 
     footer{
-      text-align:center;
+      background:#08204a;
       padding:30px;
-      background:#0b1f45;
-      margin-top:40px;
+      text-align:center;
     }
+
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:15px 20px;
+      border-radius:50px;
+      text-decoration:none;
+      font-size:18px;
+    }
+
   </style>
 </head>
 
@@ -76,13 +139,15 @@
 
 <h1>Araf Collection</h1>
 
-<p>Premium Fashion Brand</p>
+<p>Premium Online Fashion Store</p>
 
 </header>
 
 <section class="hero">
 
 <h2>Premium Style For Modern Fashion</h2>
+
+<p>Luxury Clothing Collection</p>
 
 <button class="btn">Shop Now</button>
 
@@ -94,6 +159,8 @@
 
 <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
 
+<div class="card-content">
+
 <h2>Premium T-Shirt</h2>
 
 <p class="price">৳1200</p>
@@ -102,9 +169,13 @@
 
 </div>
 
+</div>
+
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+
+<div class="card-content">
 
 <h2>Luxury Hoodie</h2>
 
@@ -114,9 +185,13 @@
 
 </div>
 
+</div>
+
 <div class="card">
 
 <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+
+<div class="card-content">
 
 <h2>Modern Panjabi</h2>
 
@@ -126,15 +201,55 @@
 
 </div>
 
+</div>
+
+</section>
+
+<section class="review">
+
+<h2>Customer Reviews ⭐</h2>
+
+<p>"Very Premium Quality Product!"</p>
+
+<p>"Fast Delivery and Trusted Shop"</p>
+
+</section>
+
+<section class="payment">
+
+<h2>Nagad / bKash Payment</h2>
+
+<p>Send Payment To:</p>
+
+<h1>01XXXXXXXXX</h1>
+
+<input type="text" placeholder="Your Name">
+
+<br>
+
+<input type="text" placeholder="Transaction ID">
+
+<br>
+
+<button class="btn">Confirm Payment</button>
+
 </section>
 
 <footer>
 
 <p>WhatsApp: 01XXXXXXXXX</p>
 
-<p>Nagad / bKash Available</p>
+<p>Facebook: Araf Collection</p>
+
+<p>© 2026 Araf Collection</p>
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/8801XXXXXXXXX">
+
+WhatsApp
+
+</a>
+
 </body>
-</html>
+  </html>
