@@ -1,76 +1,97 @@
-<header>
-  <h1>ARAF COLLECTION</h1>
-  <p>Premium Fashion Brand</p>
-</header>
+>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Araf Collection</title>
 
-<section class="hero">
-  <h2>Premium Style For Everyone</h2>
-  <p>Men's • Ladies • Kids Collection</p>
-  <a href="#products">
-    <button>Shop Now</button>
-  </a>
-</section><style>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#000;
-  color:#fff;
+background:#050b18;
+color:white;
 }
 
 header{
-  background:#0a1f44;
-  text-align:center;
-  padding:20px;
+background:#0b1f4d;
+text-align:center;
+padding:20px;
 }
 
-header h1{
-  color:#fff;
-  font-size:40px;
-  margin:0;
+.logo{
+font-size:50px;
+font-weight:bold;
+color:#d4af37;
 }
 
-header p{
-  color:#d4af37;
+.brand{
+font-size:32px;
+font-weight:bold;
+}
+
+.tagline{
+color:#d4af37;
+margin-top:5px;
 }
 
 .hero{
-  text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(135deg,#000,#0a1f44);
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#050b18,#102a66);
+padding:20px;
 }
 
-.hero h2{
-  font-size:40px;
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
 }
 
-button{
-  background:#d4af37;
-  color:#000;
-  border:none;
-  padding:12px 25px;
-  border-radius:8px;
-  font-weight:bold;
+.hero p{
+font-size:22px;
+margin-bottom:20px;
 }
-</style><section id="products">
 
-<h2>Featured Products</h2>
+.btn{
+background:#d4af37;
+color:black;
+padding:15px 30px;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
 
-<div class="product">
-  <img src="mens1.jpg" width="250">
-  <h3>Premium Men's Shirt</h3>
-  <p>৳1200</p>
-</div>
+.btn:hover{
+opacity:0.9;
+}
+</style>
 
-<div class="product">
-  <img src="ladies1.jpg" width="250">
-  <h3>Luxury Ladies Dress</h3>
-  <p>৳2200</p>
-</div>
+</head>
+<body>
 
-<div class="product">
-  <img src="kids1.jpg" width="250">
-  <h3>Kids Fashion</h3>
-  <p>৳1500</p>
-</div>
+<header>
+<div class="logo">AC</div>
+<div class="brand">ARAF COLLECTION</div>
+<div class="tagline">Premium Fashion Brand</div>
+</header>
 
+<section class="hero">
+<h1>Premium Style For Everyone</h1>
+<p>Men's • Ladies • Kids Collection</p>
+<button class="btn">Shop Now</button>
 </section>
+
+</body>
+</html>
